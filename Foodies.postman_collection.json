@@ -6,171 +6,322 @@
 	},
 	"item": [
 		{
-			"name": "Logged In User Profile",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/User",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"User"
-					]
+			"name": "Users",
+			"item": [
+				{
+					"name": "Logged In User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Specific User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Register User",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/User/Register",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"User",
-						"Register"
-					]
+			"name": "Recipes",
+			"item": [
+				{
+					"name": "Get all Recipes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/recipes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Individual Recipe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/recipes/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Individual Recipe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/recipes/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Individual Recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/recipes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Individual Recipe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/recipes/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "User Recipe Book",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/User/recipe",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"User",
-						"recipe"
-					]
+			"name": "Shopping Lists",
+			"item": [
+				{
+					"name": "Get shopping list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shoplists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shoplists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Shopping Lists",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shoplists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shoplists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Shopping Lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shoplists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shoplists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Shopping List",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shoplists/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shoplists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Shopping List",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shoplists/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shoplists",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get all Recipes",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/recipes",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"recipes"
-					]
+			"name": "Recipe Books",
+			"item": [
+				{
+					"name": "Create Recipe Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recipe Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Recipe Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/books/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Specific Recipe Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/books/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Specific Recipe Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/books/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Individual Recipe",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/recipes/{{id}}",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"recipes",
-						"{{id}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Individual Recipe",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/recipes/{{id}}",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"recipes",
-						"{{id}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Shopping List",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.0.1:3000/List",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"List"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get shopping list",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": null
-			},
-			"response": []
+			]
 		}
 	]
 }
